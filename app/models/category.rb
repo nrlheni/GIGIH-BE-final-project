@@ -1,4 +1,4 @@
 class Category < ApplicationRecord
-  has_many :category_menu
-  has_many :menu, through: :category_menu
+  has_many :category_menus
+  has_many :menus, through: :category_menus
 end
