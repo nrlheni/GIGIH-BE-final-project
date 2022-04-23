@@ -1,25 +1,44 @@
-# Rails on Replit
+# Final Project BE
+This project was created as a solution to complete the test case given by Gigih for the Backend Engineering track using Ruby on Rails.
 
-This is a template to get you started with Rails on Replit. It's ready to go so you can just hit run and start coding!
-
-This template was generated using `rails new` (after you install the `rails` gem from the packager sidebar) so you can always do that if you prefer to set it up from scratch. The only had two make config changes we had to make to run it on Replit:
-
-- bind the app on `0.0.0.0` instead of `localhost` (see `.replit`)
-- allow `*.repl.co` hosts (see `config/environments/development.rb`)
-- allow the app to be iframed on `replit.com` (see `config/application.rb`)
-
-## Running the app
-
-Simple hit run! You can edit the run command from the `.replit` file.
-
+The highlights of the material in implementing this project:
+- MVC
+- Database
+- Testing (TDD)
 ## Running commands
 
-Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server.
+Start every command with `bundle exec` so that it runs in the context of the installed gems environment. The console pane will give you output from the server but you can run arbitrary command from the shell without stopping the server. 
+
+## MVC 
+- Model
+  
+  There are 6 models that have been generated, namely menu, customer, category, order, category_menu, and order_detail.
+- View
+
+  There are 5 views that have been generated: menu, customer, order, order_detail, and landing.
+
+- Controller
+
+  Currently there are 5 controllers that have been generated: menu, customer, order, order_detail, and landing. 
+
+Mostly of them apply `scaffold` or `scaffold_controller` to generated.
 
 ## Database
+The implementation of the database is by doing `db: creation` and `db: migration` for each table. Then implement references to create foreign keys. Prior to that, relations were created by implementing `has_many` and `belongs_to`.
+  
+## Testing (TDD)
+  Open `spec` folder that contain `models` and `factories`, and you can see specs as the assestment instruction given. There's two specs, `customer_spec.rb` for the spec refers to the validation in [app/models/customer] and `menu_spec.rb` refers to the validation in `app/models/menu`.
 
-SQLite would work in development but we don't recommend running it in production. Instead look into using the built-in [Replit database](http://docs.replit.com/misc/database). Otherwise you are welcome to connect databases from your favorite provider. 
+  Always run `bundle exec rspec -fd` to test the spec code. For some spec can be error causes by the Faker that give the random data. So you can run the command again to passing the error.
 
-## Help
+<!-- CONTACT -->
+## Contact
 
-If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Alternatively you can [ask in the community](https://replit.com/talk/ask). Feel free to report bugs [here](https://replit.com/bugs) and give us feedback [here](https://Replit/feedback).
+Nurul Akhni - KM_G2BE3015
+
+Email: nurulakhni12@gmail.com
+
+Project Link: [https://github.com/nrlheni/GIGIH-BE-final-project.git](https://github.com/nrlheni/GIGIH-BE-final-project.git)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
