@@ -27,7 +27,7 @@ Mostly of them apply `scaffold` or `scaffold_controller` to generated.
 The implementation of the database is by doing `db: creation` and `db: migration` for each table. Then implement references to create foreign keys. Prior to that, relations were created by implementing `has_many` and `belongs_to`.
   
 ## Testing (TDD)
-  Open `spec` folder that contain `models` and `factories`, and you can see specs as the assestment instruction given. There's two specs, `customer_spec.rb` for the spec refers to the validation in [app/models/customer] and `menu_spec.rb` refers to the validation in `app/models/menu`.
+  Open `spec` folder that contain `models` and `factories`, and you can see specs as the assestment instruction given. There's two specs, `customer_spec.rb` for the spec refers to the validation in `app/models/customer` and `menu_spec.rb` refers to the validation in `app/models/menu`.
 
   Always run `bundle exec rspec -fd` to test the spec code. For some spec can be error causes by the Faker that give the random data. So you can run the command again to passing the error.
 
