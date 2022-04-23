@@ -1,4 +1,7 @@
 class Menu < ApplicationRecord
+  has_many :order_details
+  has_many :orders, through: :order_details
+  
   has_many :category_menus
   has_many :categories, through: :category_menus
 

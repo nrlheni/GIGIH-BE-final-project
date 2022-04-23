@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :get_all_orders
+
   before_action :get_customer
   before_action :set_order, only: %i[ show edit update destroy ]
   
@@ -64,16 +64,14 @@ class OrdersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def get_all_orders
-      @orders = Order.all
-    end
+    
     def get_customer
       @customer = Customer.find(params[:customer_id])
     end
   
     def set_order
       # @order = Order.find(params[:id])
-      @order = @customer.orders.find(params[:id])
+      @order = @customer.orders.where(customer_id: params[:customer_id])
     end
 
     # Only allow a list of trusted parameters through.
