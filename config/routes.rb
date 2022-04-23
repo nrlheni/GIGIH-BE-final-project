@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'landing/index'
   resources :customers do
     resources :orders
   end
