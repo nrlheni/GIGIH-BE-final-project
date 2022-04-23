@@ -1,5 +1,5 @@
 # Final Project BE
-This project was created as a solution to complete the test case given by Gigih for the Backend Engineering track using Ruby on Rails.
+This project was created as a solution to complete the `Catering Administration App` as the test case given by Gigih for the Backend Engineering track using Ruby on Rails.
 
 The highlights of the material in implementing this project:
 - MVC
@@ -32,9 +32,9 @@ The implementation of the database is by doing `db: creation` and `db: migration
   Always run `bundle exec rspec -fd` to test the spec code. For some spec can be error causes by the Faker that give the random data. So you can run the command again to passing the error.
 
 <!-- CONTACT -->
-## Contact
+## Author
 
-Nurul Akhni - KM_G2BE3015
+### Nurul Akhni
 
 Email: nurulakhni12@gmail.com
 
