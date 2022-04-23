@@ -6,7 +6,7 @@
   <% @orders.each do |order| %>
     <%= render order %>
     <p>
-      <%= link_to 'Show this order', customer_order_path(@customer, order)%>
+      <%= link_to 'Show this order', customer_order_path(@customer, order)%> |
       <%= link_to 'Show Customer', [@customer] %>
     </p>
   <% end %>
