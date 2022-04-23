@@ -5,7 +5,7 @@
 <div>
   <%= link_to "Edit this customer", edit_customer_path(@customer) %> |
   <%= link_to "Back to customers", customers_path %> |
-  <%= link_to 'Show Order', customer_orders_path(@customer) %> 
+  <%= link_to 'Show this Customer Order', customer_orders_path(@customer) %> 
 
   <%= button_to "Destroy this customer", @customer, method: :delete %>
 </div>
